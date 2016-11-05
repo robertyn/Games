@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.f {
+    height: 530px;
+    width: 500px;
+    box-sizing: border-box;
+    border: 3px solid black;
+    /*定位居中*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: ;*/
+}
+
+.f .top_time_score {
+    height: 30px;
+    /*width:100px;*/
+    background-color: yellow;
+}
+
+.f .top_time_score .time {
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    background-color: yellow;
+    height: 100%;
+    float: left;
+    width: 400px;
+    overflow: hidden;
+}
+
+.f .top_time_score .score {
+    line-height: 30px;
+    background-color: yellow;
+    height: 100%;
+    float: right;
+}
+.f .top_time_score .score .time{
+    color:red;
+    font-size: 25px;
+    border:;
+}
+.f .top_time_score .score span {
+    display: inline-block;
+    width: 50px;
+}
+.f .top_time_score .border{
+    margin-left:2px;
+    position: relative;
+    line-height: 15px;
+    margin-top:7px;
+    height: 15px;
+    width:394px;
+    overflow: hidden;
+    border:2px solid gray;
+}
+
+.f .top_time_score span.t {
+    position: absolute;
+    width: 400px;
+    height: 15px;
+    display: inline-block;
+    /*margin-top: 7px;*/
+    background: red;
+    right: 0;
+}
+
+.f .color {
+    background-color: #E8E8E8;
+    height: 491px;
+    padding: 2px;
+}
+
+.color .colorBox {
+    float: left;
+    /*background-color: green;*/
+    height: 41px;
+    width: 41px;
+    flex: 1;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.end, .start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 550px;
+    height: 550px;
+    background-color: rgba(255,255,255,.8);
+    line-height: 550px;
+    text-align: center;
+    display: none;
+}
+
+#start {
+    display: block;
+    background-color: green;
+}
+
+.end p ,#start p {
+    font-size: 50px;
+    font-weight: 700;
+    color: orange;
+}
